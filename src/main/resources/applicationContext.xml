@@ -8,8 +8,13 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="MusicBean"
-          class="springapp.ClassicalMusic">
-        <!--constructor-arg value="A-res"/-->
+          class="springapp.RapMusic">
+        <!--constructor-arg value="A-
+        res"/-->
+    </bean>
+    <bean id="MusicPlayer"
+       class="springapp.MusicPlayer">
+        <constructor-arg ref="MusicBean"/>
     </bean>
 
 </beans>
