@@ -14,7 +14,9 @@
     </bean>
     <bean id="MusicPlayer"
        class="springapp.MusicPlayer">
-        <constructor-arg ref="MusicBean"/>
+        <property name="music" ref="MusicBean"/>
+        <property name="name" value="A-res"/>
+        <property name="volume" value="50"/>
     </bean>
 
 </beans>
