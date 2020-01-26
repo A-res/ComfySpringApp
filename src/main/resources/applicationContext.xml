@@ -14,7 +14,7 @@
     </bean>
     <bean id="MusicPlayer"
        class="springapp.MusicPlayer">
-        <constructor-arg ref="MusicBean"/>
+        <property name="music" ref="MusicBean"/>
     </bean>
 
 </beans>
