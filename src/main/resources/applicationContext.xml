@@ -13,7 +13,8 @@
         res"/-->
     </bean>
     <bean id="MusicPlayer"
-       class="springapp.MusicPlayer">
+       class="springapp.MusicPlayer"
+          scope="prototype">
         <property name="music" ref="MusicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
